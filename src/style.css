@@ -143,3 +143,6 @@ body{background:#f4f7fb}
 @media(max-width:1000px){.hero.hero-fluid{height:285px}.fluid-center{left:22%;width:56%}.fluid-caption{left:20%}}
 @media(max-width:650px){.hero.hero-fluid{height:215px}.fluid-left{width:43%}.fluid-left-accent{left:14%;width:27%}.fluid-center{left:15%;width:70%}.fluid-right{width:44%}.fluid-caption{left:20%;bottom:10px}.fluid-caption strong{font-size:19px}.fluid-caption span{font-size:7px}}
 @media(max-width:420px){.hero.hero-fluid{height:180px}.fluid-caption strong{font-size:16px}.fluid-caption span{font-size:6px}}
+
+/* Ajuste fino: preservar o topo da cabeça do Pelé sem mudar a composição */
+.hero-fluid .fluid-center img{object-position:center top}
