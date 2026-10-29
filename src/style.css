@@ -217,3 +217,9 @@ body{background:#f4f7fb}
 @media(max-width:800px){.hero-fluid .fluid-bottom-brand{height:52px;gap:12px}.fluid-brand-name{font-size:19px}.fluid-brand-desc{font-size:8px;letter-spacing:.4px}}
 @media(max-width:650px){.hero.hero-fluid{height:215px!important}.hero-fluid .fluid-bottom-brand{height:45px;flex-direction:column;gap:2px;padding:5px}.fluid-brand-name{font-size:17px}.fluid-brand-desc{font-size:8px}}
 @media(max-width:420px){.hero.hero-fluid{height:180px!important}.hero-fluid .fluid-bottom-brand{height:41px}.fluid-brand-name{font-size:15px}.fluid-brand-desc{font-size:7px}}
+
+/* Links dos ícones: superfície interativa acima dos elementos decorativos */
+.system-card{position:relative}
+.system-card .system-icon-link{display:grid!important;place-items:center;position:relative;z-index:5;pointer-events:auto!important;cursor:pointer!important;text-decoration:none!important;transition:transform .18s ease,box-shadow .18s ease}
+.system-card .system-icon-link:hover,.system-card .system-icon-link:focus-visible{transform:scale(1.09);box-shadow:0 5px 17px #083c7d44;outline:2px solid #ff9c27;outline-offset:3px}
+.system-card .system-icon-link svg{pointer-events:none}
