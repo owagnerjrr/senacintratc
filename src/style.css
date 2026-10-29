@@ -92,3 +92,14 @@ body{background:#f4f7fb}
 .compact-tags span{display:flex;align-items:center;gap:7px}.compact-tags svg{color:#ff9b20}
 @media(max-width:1000px){.hero.hero-compact{grid-template-columns:minmax(0,1.5fr) minmax(220px,1fr);height:285px}.hero-compact-details{padding:18px 22px}.hero-compact-details h1{font-size:39px}}
 @media(max-width:650px){.hero.hero-compact{height:auto;display:block}.hero-compact-art{height:auto;aspect-ratio:1648/928}.hero-compact-art img{width:100%;height:100%;object-fit:contain}.hero-compact-details{padding:15px 20px 17px}.hero-compact-details:before{display:none}.hero-compact-details h1{font-size:29px;margin:7px 0}.hero-compact-details p{font-size:12px}.compact-tags{flex-direction:row;flex-wrap:wrap;margin-top:10px;font-size:10px}.compact-eyebrow{font-size:9px}}
+
+/* Fotografias complementares abaixo do banner compacto, sem aumentar o banner */
+.heritage-strip{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:5px;background:#f5a12c;padding:5px 5px 6px;border-bottom:1px solid #e3eaf4}
+.heritage-tile{height:118px;position:relative;overflow:hidden;background-size:cover;background-position:center;display:flex;align-items:end;isolation:isolate}
+.heritage-tile:after{content:"";position:absolute;inset:25% 0 0;background:linear-gradient(transparent,#001a3cba);z-index:-1}
+.heritage-tile span{font-size:12px;font-weight:700;letter-spacing:.1px;color:#fff;text-shadow:0 2px 8px #001b3e;padding:12px 16px}
+.heritage-senac{background-image:url('/images/Senac%20Tc.jpg');background-position:center 48%}
+.heritage-mural{background-image:url('/images/Pel%C3%A9.jpg');background-position:center 45%}
+.heritage-monument{background-image:url('/images/Pele%203c.webp');background-position:center 44%}
+@media(max-width:800px){.heritage-tile{height:92px}.heritage-tile span{font-size:10px;padding:9px}}
+@media(max-width:520px){.heritage-strip{gap:3px;padding:3px}.heritage-tile{height:74px}.heritage-tile span{font-size:8px;padding:6px;line-height:1.25}}
