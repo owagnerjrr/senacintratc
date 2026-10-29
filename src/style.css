@@ -156,3 +156,13 @@ body{background:#f4f7fb}
 @media(max-width:1000px){.hero-fluid .fluid-caption{left:13%;padding:8px 12px}.hero-fluid .fluid-caption strong{font-size:22px}}
 @media(max-width:650px){.hero-fluid .fluid-caption{left:9%;bottom:8px;gap:3px;padding:6px 9px}.hero-fluid .fluid-caption-kicker{font-size:6px;letter-spacing:.5px}.hero-fluid .fluid-caption strong{font-size:15px}}
 @media(max-width:420px){.hero-fluid .fluid-caption{left:7%;bottom:6px;padding:5px 7px}.hero-fluid .fluid-caption strong{font-size:12px}}
+
+/* Correção do texto duplicado: a frase antiga está gravada na própria fotografia.
+   Cobrir somente a faixa inferior esquerda da arte, preservando logo e rosto. */
+.hero-fluid .fluid-center::after{
+ content:"";position:absolute;z-index:3;left:0;bottom:0;
+ width:73%;height:48%;pointer-events:none;
+ background:linear-gradient(90deg,#00152feF 0%,#001a38f5 52%,#001a38dd 76%,transparent 100%);
+}
+.hero-fluid .fluid-caption{z-index:5;left:5%;bottom:12px;max-width:88%;background:transparent;box-shadow:none}
+@media(max-width:650px){.hero-fluid .fluid-center::after{width:85%;height:49%}.hero-fluid .fluid-caption{left:3%;bottom:7px}}
