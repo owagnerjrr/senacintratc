@@ -203,3 +203,17 @@ body{background:#f4f7fb}
   .hero-fluid .fluid-caption-kicker{font-size:6px;letter-spacing:.5px}
   .hero-fluid .fluid-caption-subtitle{font-size:8px}
 }
+
+/* Banner corrigido: nenhuma caixa sobre a arte ou sobre o rosto do Pelé.
+   Barra tipográfica independente na base, preservando altura total de 315px. */
+.hero.hero-fluid{height:315px!important}
+.hero-fluid .fluid-center::after{display:none!important}
+.hero-fluid .fluid-bottom-brand{position:absolute;z-index:10;bottom:0;left:0;right:0;height:55px;background:linear-gradient(90deg,#00152ff5,#062f64f0 55%,#00152ff5);border-top:1px solid #ffac4540;border-bottom:4px solid #ff9c26;display:flex;align-items:center;justify-content:center;gap:22px;padding:7px 20px;box-shadow:0 -9px 26px #00132b35}
+.fluid-brand-name{font-size:23px;line-height:1;font-weight:900;color:white;white-space:nowrap;letter-spacing:-.6px}
+.fluid-brand-name span{font-weight:700}
+.fluid-brand-name strong{color:#ff9f2a}
+.fluid-brand-desc{font-size:10px;letter-spacing:1.2px;font-weight:750;color:#e2ebfa;white-space:nowrap}
+.fluid-brand-desc i{font-style:normal;color:#ffa42c;padding:0 6px}
+@media(max-width:800px){.hero-fluid .fluid-bottom-brand{height:52px;gap:12px}.fluid-brand-name{font-size:19px}.fluid-brand-desc{font-size:8px;letter-spacing:.4px}}
+@media(max-width:650px){.hero.hero-fluid{height:215px!important}.hero-fluid .fluid-bottom-brand{height:45px;flex-direction:column;gap:2px;padding:5px}.fluid-brand-name{font-size:17px}.fluid-brand-desc{font-size:8px}}
+@media(max-width:420px){.hero.hero-fluid{height:180px!important}.hero-fluid .fluid-bottom-brand{height:41px}.fluid-brand-name{font-size:15px}.fluid-brand-desc{font-size:7px}}
