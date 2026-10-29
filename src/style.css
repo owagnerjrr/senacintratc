@@ -223,3 +223,16 @@ body{background:#f4f7fb}
 .system-card .system-icon-link{display:grid!important;place-items:center;position:relative;z-index:5;pointer-events:auto!important;cursor:pointer!important;text-decoration:none!important;transition:transform .18s ease,box-shadow .18s ease}
 .system-card .system-icon-link:hover,.system-card .system-icon-link:focus-visible{transform:scale(1.09);box-shadow:0 5px 17px #083c7d44;outline:2px solid #ff9c27;outline-offset:3px}
 .system-card .system-icon-link svg{pointer-events:none}
+
+/* Vídeo institucional: destaque editorial abaixo dos acessos */
+.unit-video-section{margin:26px 0 24px;padding:22px;border:1px solid #dbe5f2;border-radius:17px;background:linear-gradient(140deg,#fff,#f0f6ff);box-shadow:0 10px 32px #082b5a0c}
+.unit-video-heading{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:17px}
+.unit-video-eyebrow{font-size:10px;font-weight:900;letter-spacing:1.6px;color:#e7770d}
+.unit-video-heading h2{display:flex;align-items:center;gap:10px;margin:7px 0 6px;font-size:23px;letter-spacing:-.6px;color:#073c7e}
+.unit-video-heading h2 svg{color:#f58218}
+.unit-video-heading p{margin:0;font-size:13px;color:#5e7698}
+.unit-video-tag{padding:9px 13px;border:1px solid #dce7f5;border-radius:100px;background:#fff;font-size:11px;color:#315b8b;font-weight:700;white-space:nowrap}
+.unit-video-frame{overflow:hidden;border-radius:13px;background:#001735;box-shadow:0 12px 28px #052e6040;max-width:1100px;margin:0 auto;aspect-ratio:16/9}
+.unit-video-frame video{display:block;width:100%;height:100%;object-fit:contain;background:#001735}
+.unit-video-note{text-align:center;font-size:11px;color:#7388a3;margin:12px 0 0}
+@media(max-width:650px){.unit-video-section{padding:13px;margin:20px 0}.unit-video-heading h2{font-size:18px}.unit-video-tag{display:none}.unit-video-heading p{font-size:12px}}
