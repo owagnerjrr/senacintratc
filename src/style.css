@@ -103,3 +103,23 @@ body{background:#f4f7fb}
 .heritage-monument{background-image:url('/images/Pele%203c.webp');background-position:center 44%}
 @media(max-width:800px){.heritage-tile{height:92px}.heritage-tile span{font-size:10px;padding:9px}}
 @media(max-width:520px){.heritage-strip{gap:3px;padding:3px}.heritage-tile{height:74px}.heritage-tile span{font-size:8px;padding:6px;line-height:1.25}}
+
+/* Banner horizontal único: todas as imagens lado a lado na mesma altura */
+.hero.hero-collage{height:315px;min-height:0;max-height:none;aspect-ratio:auto;display:grid;grid-template-columns:minmax(0,2.4fr) repeat(3,minmax(0,1fr));gap:4px;padding:4px;background:#f78d16;border:0;overflow:hidden;isolation:isolate}
+.hero.hero-collage:after{display:none}
+.collage-primary,.collage-photo{position:relative;overflow:hidden;min-width:0;height:100%;background-color:#061d41}
+.collage-primary img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.collage-primary:after,.collage-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#001936d9 0%,transparent 43%);pointer-events:none}
+.collage-primary:hover img,.collage-photo:hover{transform:scale(1.035)}
+.collage-photo{background-size:cover;background-position:center;transition:transform .6s cubic-bezier(.2,.7,.2,1);transform-origin:center;display:flex;align-items:flex-end}
+.collage-school{background-image:url('/images/Senac%20Tc.jpg');background-position:50% 48%}
+.collage-mural{background-image:url('/images/Pel%C3%A9.jpg');background-position:45% 46%}
+.collage-statue{background-image:url('/images/Pele%203c.webp');background-position:50% 42%}
+.collage-photo span{position:relative;z-index:2;color:white;font-size:12px;font-weight:800;line-height:1.3;padding:18px 12px;text-shadow:0 2px 8px #001936}
+.collage-title{position:absolute;bottom:14px;left:19px;z-index:2;color:#fff;display:flex;flex-direction:column;gap:3px;text-shadow:0 2px 9px #001936}
+.collage-title span{font-size:9px;letter-spacing:2px;font-weight:800;color:#ffd59d}
+.collage-title strong{font-size:27px;font-style:normal;letter-spacing:-1px}
+.collage-title em{color:#ff9c2a;font-style:normal}
+@media(max-width:1000px){.hero.hero-collage{height:285px;grid-template-columns:minmax(0,2fr) repeat(3,minmax(0,1fr))}.collage-photo span{font-size:10px;padding:12px 8px}}
+@media(max-width:650px){.hero.hero-collage{height:205px;grid-template-columns:minmax(0,1.8fr) repeat(3,minmax(0,1fr));gap:2px;padding:2px}.collage-title{left:8px;bottom:8px}.collage-title span{font-size:6px;letter-spacing:1px}.collage-title strong{font-size:17px}.collage-photo span{font-size:8px;padding:7px 4px}}
+@media(max-width:420px){.hero.hero-collage{height:170px}.collage-photo span{font-size:7px}.collage-title strong{font-size:15px}}
