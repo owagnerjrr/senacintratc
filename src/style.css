@@ -166,3 +166,40 @@ body{background:#f4f7fb}
 }
 .hero-fluid .fluid-caption{z-index:5;left:5%;bottom:12px;max-width:88%;background:transparent;box-shadow:none}
 @media(max-width:650px){.hero-fluid .fluid-center::after{width:85%;height:49%}.hero-fluid .fluid-caption{left:3%;bottom:7px}}
+
+/* Letreiro final: superfície sólida e legível, sem texto fantasma da arte original */
+.hero-fluid .fluid-center::after{
+  left:0;bottom:0;width:68%;height:61%;z-index:3;
+  background:linear-gradient(90deg,#001631 0%,#001631 67%,rgba(0,22,49,.94) 82%,transparent 100%);
+}
+.hero-fluid .fluid-caption{
+  left:5%;bottom:13px;z-index:5;max-width:72%;gap:8px;
+  padding:12px 17px 13px 15px;border-left:4px solid #ff9d22;
+  border-radius:0;background:transparent;box-shadow:none;
+  text-shadow:none;align-items:flex-start;
+}
+.hero-fluid .fluid-caption-kicker{
+  display:block;color:#ffc37a;font-size:10px;letter-spacing:1.45px;
+  font-weight:800;line-height:1.3;
+}
+.hero-fluid .fluid-caption strong{
+  display:block;font-size:clamp(21px,2.15vw,34px);line-height:1.08;
+  color:#fff;font-weight:900;letter-spacing:-1px;white-space:nowrap;
+}
+.hero-fluid .fluid-caption strong em{color:#ffa329}
+.hero-fluid .fluid-caption-subtitle{
+  font-size:11px;color:#d4e4f6;letter-spacing:.8px;font-weight:600;
+}
+@media(max-width:1000px){
+  .hero-fluid .fluid-center::after{width:78%;height:63%}
+  .hero-fluid .fluid-caption{max-width:82%;gap:5px;padding:9px 10px}
+  .hero-fluid .fluid-caption strong{font-size:clamp(18px,2.3vw,26px)}
+  .hero-fluid .fluid-caption-kicker{font-size:8px}
+}
+@media(max-width:650px){
+  .hero-fluid .fluid-center::after{width:94%;height:67%}
+  .hero-fluid .fluid-caption{left:3%;bottom:7px;max-width:93%;gap:3px;padding:5px 8px}
+  .hero-fluid .fluid-caption strong{font-size:clamp(13px,3.3vw,20px)}
+  .hero-fluid .fluid-caption-kicker{font-size:6px;letter-spacing:.5px}
+  .hero-fluid .fluid-caption-subtitle{font-size:8px}
+}
