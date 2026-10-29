@@ -1,7 +1,7 @@
-import{useEffect,useMemo,useState}from"react";import{signInWithEmailAndPassword,signOut,onAuthStateChanged,User}from"firebase/auth";import{collection,doc,onSnapshot,setDoc,deleteDoc,serverTimestamp}from"firebase/firestore";import{auth,db,configured}from"./firebase";import{catalog,LinkItem}from"./catalog";import{Home,LayoutGrid,BookOpen,ToolCase,Video,Bell,Info,Search,CalendarDays,Laptop,CarFront,QrCode,Gamepad2,GraduationCap,ClipboardList,Headphones,ExternalLink,LockKeyhole,Menu,X,Star,Plus,Trash2,LogIn,LogOut,MapPin,Heart,Save}from"lucide-react";
+import{useEffect,useMemo,useState}from"react";import{signInWithEmailAndPassword,signOut,onAuthStateChanged,User}from"firebase/auth";import{collection,doc,onSnapshot,setDoc,deleteDoc,serverTimestamp}from"firebase/firestore";import{auth,db,configured}from"./firebase";import{catalog,LinkItem}from"./catalog";import{Home,LayoutGrid,BookOpen,Wrench,Video,Bell,Info,Search,CalendarDays,Laptop,CarFront,QrCode,Gamepad2,GraduationCap,ClipboardList,Headphones,ExternalLink,LockKeyhole,Menu,X,Star,Plus,Trash2,LogIn,LogOut,MapPin,Heart,Save}from"lucide-react";
 const categories=["Início","Sistemas","Institucionais","Ferramentas","Tutoriais","Comunicados","Sobre a Unidade"];
 const symbols:any={calendar:CalendarDays,laptop:Laptop,car:CarFront,qr:QrCode,game:Gamepad2,graduation:GraduationCap,clipboard:ClipboardList,headphones:Headphones};
-const navIcons:any=[Home,LayoutGrid,BookOpen,ToolCase,Video,Bell,Info];
+const navIcons:any=[Home,LayoutGrid,BookOpen,Wrench,Video,Bell,Info];
 const FAVORITES="senac-intra-tc-favorites";
 export default function App(){
 const [section,setSection]=useState("Início"),[query,setQuery]=useState(""),[mobile,setMobile]=useState(false);
