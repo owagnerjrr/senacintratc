@@ -123,3 +123,23 @@ body{background:#f4f7fb}
 @media(max-width:1000px){.hero.hero-collage{height:285px;grid-template-columns:minmax(0,2fr) repeat(3,minmax(0,1fr))}.collage-photo span{font-size:10px;padding:12px 8px}}
 @media(max-width:650px){.hero.hero-collage{height:205px;grid-template-columns:minmax(0,1.8fr) repeat(3,minmax(0,1fr));gap:2px;padding:2px}.collage-title{left:8px;bottom:8px}.collage-title span{font-size:6px;letter-spacing:1px}.collage-title strong{font-size:17px}.collage-photo span{font-size:8px;padding:7px 4px}}
 @media(max-width:420px){.hero.hero-collage{height:170px}.collage-photo span{font-size:7px}.collage-title strong{font-size:15px}}
+
+/* Composição orgânica: Pelé ao centro, transições em degradê sem blocos */
+.hero.hero-fluid{position:relative;display:block;height:315px;min-height:0;max-height:none;aspect-ratio:auto;overflow:hidden;border:0;background:#001633;isolation:isolate}
+.hero.hero-fluid:after{display:none}
+.fluid-scene,.fluid-center{position:absolute;top:0;bottom:0;overflow:hidden}
+.fluid-scene{background-size:cover;background-repeat:no-repeat;filter:saturate(.97);transition:filter .5s ease,transform .7s ease}
+.fluid-left{left:0;width:35%;background-image:linear-gradient(90deg,#00235130,#00235120),url('/images/Senac%20Tc.jpg');background-position:48% 48%;mask-image:linear-gradient(to right,#000 0%,#000 45%,transparent 100%);-webkit-mask-image:linear-gradient(to right,#000 0%,#000 45%,transparent 100%)}
+.fluid-left-accent{left:17%;width:24%;background-image:url('/images/Pel%C3%A9.jpg');background-position:50% 42%;opacity:.83;mask-image:linear-gradient(to right,transparent 0%,#000 25%,#000 50%,transparent 100%);-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 25%,#000 50%,transparent 100%)}
+.fluid-center{left:25%;width:50%;z-index:2;display:flex;align-items:center;justify-content:center;mask-image:linear-gradient(to right,transparent 0%,#000 16%,#000 84%,transparent 100%);-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 16%,#000 84%,transparent 100%)}
+.fluid-center img{height:100%;width:100%;object-fit:cover;object-position:center center;display:block}
+.fluid-right{right:0;width:36%;background-image:linear-gradient(90deg,#00163222,#00163244),url('/images/Pele%203c.webp');background-position:50% 43%;mask-image:linear-gradient(to left,#000 0%,#000 45%,transparent 100%);-webkit-mask-image:linear-gradient(to left,#000 0%,#000 45%,transparent 100%)}
+.fluid-shimmer{position:absolute;inset:0;z-index:3;pointer-events:none;background:linear-gradient(180deg,#00162c14 0%,transparent 45%,#00152e6b 100%);border-bottom:4px solid #f9a032}
+.fluid-caption{position:absolute;left:22%;bottom:15px;z-index:4;color:white;text-shadow:0 2px 12px #00102f;display:flex;flex-direction:column;gap:3px}
+.fluid-caption span{font-size:9px;letter-spacing:1.7px;font-weight:800;color:#ffcc83}
+.fluid-caption strong{font-size:26px;letter-spacing:-1px;line-height:1}
+.fluid-caption em{font-style:normal;color:#ffa326}
+.hero-fluid:hover .fluid-scene{filter:saturate(1.1) brightness(1.04)}
+@media(max-width:1000px){.hero.hero-fluid{height:285px}.fluid-center{left:22%;width:56%}.fluid-caption{left:20%}}
+@media(max-width:650px){.hero.hero-fluid{height:215px}.fluid-left{width:43%}.fluid-left-accent{left:14%;width:27%}.fluid-center{left:15%;width:70%}.fluid-right{width:44%}.fluid-caption{left:20%;bottom:10px}.fluid-caption strong{font-size:19px}.fluid-caption span{font-size:7px}}
+@media(max-width:420px){.hero.hero-fluid{height:180px}.fluid-caption strong{font-size:16px}.fluid-caption span{font-size:6px}}
