@@ -7,5 +7,6 @@ export const catalog:LinkItem[]=[
 {id:"rh",name:"Portal Meu RH",description:"Serviços e informações de recursos humanos",category:"Institucionais",url:"https://meurh.mg.senac.br/web/app/RH/PortalMeuRH/#/login",icon:"clipboard"},
 {id:"bpm",name:"BPM",description:"Processos e fluxos institucionais",category:"Institucionais",url:"https://bpm.mg.senac.br/workspace/",icon:"clipboard"},
 {id:"secretaria",name:"Secretaria Digital",description:"Acesso à plataforma da Secretaria Digital",category:"Institucionais",url:"https://senacmg.nscl17.meucrm.online/",icon:"graduation"},
+{id:"gestao-educacional",name:"Gestão Educacional",description:"Acesso ao espaço da Gestão Educacional no SharePoint",category:"Institucionais",url:"https://senacminas.sharepoint.com/sites/GestoEducTrsCoraes/SitePages/TrainingHome.aspx?e=1:309eff219f064f8487bf6a7de60c3afb",icon:"graduation"},
 {id:"ramais",name:"Ramais da Unidade",description:"Consulte telefones, ramais e contatos dos setores",category:"Institucionais",url:"/images/Ramais%20Senac%20Tr%C3%AAs%20Cora%C3%A7%C3%B5es.png",icon:"phone"}
 ];
